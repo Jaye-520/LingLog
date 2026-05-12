@@ -1,29 +1,10 @@
 ---
-// 在 frontmatter 中定义页面标题
+import Layout from '../layouts/Layout.astro';
+
 const pageTitle = "关于";
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="/">首页</a>
-    <a href="/about/">关于</a>
-    <a href="/blog/">博客</a>
-    <h1>{pageTitle}</h1>
-    <h2>LingLog 是什么？</h2>
-    <p>LingLog 这个名字，我们拆开来看，Ling是致敬的《灵笼》这部动漫，因为我喜欢看它，Log是日志的意思，所以 LingLog 就是记录我学习和成长的地方。</p>
-    {}
-  </body>
-</html>
+
+<Layout pageTitle={pageTitle}>
+  <h2>LingLog 是什么？</h2>
+  <p>LingLog 这个名字，我们拆开来看，Ling是致敬的《灵笼》这部动漫，因为我喜欢看它，Log是日志的意思，所以 LingLog 就是记录我学习和成长的地方。</p>
+</Layout>
