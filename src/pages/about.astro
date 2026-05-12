@@ -10,6 +10,12 @@ const pageTitle = "关于";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+    </style>
   </head>
   <body>
     <a href="/">首页</a>
@@ -18,5 +24,6 @@ const pageTitle = "关于";
     <h1>{pageTitle}</h1>
     <h2>LingLog 是什么？</h2>
     <p>LingLog 这个名字，我们拆开来看，Ling是致敬的《灵笼》这部动漫，因为我喜欢看它，Log是日志的意思，所以 LingLog 就是记录我学习和成长的地方。</p>
+    {}
   </body>
 </html>
